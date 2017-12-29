@@ -7,15 +7,16 @@ A simple webpack plugin to keep your build size in check.
 
 ## Getting Started
 
-### Installation and Usage
-1. `npm i webpack-bundle-size-check-plugin`
-2. Import in your `webpack.config.js` file.
+### Installation
+`npm i webpack-bundle-size-check-plugin`
+
+### Configuring
+1. Import in your `webpack.config.js` file.
+2. Add to your plugins array.
 ```
-const WebpackBundleSizeCheckPlugin = require
-('webpack-bundle-size-check-plugin')
-```
-3. Add this to your plugins array.
-```
+<!-- import on the top of the file -->
+const WebpackBundleSizeCheckPlugin = require('webpack-bundle-size-check-plugin');
+
 plugins: [
   new WebpackBundleSizeCheckPlugin([
     {
