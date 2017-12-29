@@ -1,12 +1,12 @@
 {
   "name": "WebpackBundleSizeCheckPlugin",
   "version": "1.0.0",
-  "description": "",
+  "description": "A webpack plugin for restricting your bundle size",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": ["webpack", "webpack-plugin", "performance"],
+  "author": "Harshwardhan Rathore",
+  "license": "ISC",
+  "devDependencies": {
+    "chalk": "^2.3.0"
+  }
 }
