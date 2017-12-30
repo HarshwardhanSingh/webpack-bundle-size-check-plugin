@@ -14,9 +14,9 @@ class WebpackBundleSizeCheckPlugin {
   }
 
   apply(compiler) {
-    compiler.plugin("done", (stats) => {
+    compiler.hooks.done.tap("WebpackBundleSizeCheckPlugin", (stats) => {
       if (!Array.isArray(this.options)) {
-        throw new Error(chalk.red('Expected an array of configuration options'))
+        throw new Error(chalk.red('Expected an array of configuration options'));
       }
       const { assets } = stats.compilation;
       const assetsName = Object.keys(assets);
