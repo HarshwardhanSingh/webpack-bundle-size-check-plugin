@@ -21,8 +21,8 @@ plugins: [
   new WebpackBundleSizeCheckPlugin([
     {
       chunkName: 'app.bundle.js',  // exact name of output file
-      maxSize: '100',     // in KB
-      mode: 'strict    // "non-strict" by default
+      maxSize: '100',              // in KB
+      mode: 'strict'               // "non-strict" by default
     }
   ])
 ]

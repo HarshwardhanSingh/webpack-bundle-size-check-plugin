@@ -1,6 +1,6 @@
 {
   "name": "webpack-bundle-size-check-plugin",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A webpack plugin for restricting your bundle size",
   "main": "index.js",
   "keywords": ["webpack", "webpack-plugin", "performance"],
